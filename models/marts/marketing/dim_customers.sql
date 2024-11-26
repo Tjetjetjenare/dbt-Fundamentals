@@ -1,25 +1,20 @@
-{{
-  config(
-    materialized='view'
-  )
-}}
-
 WITH customers as (
 
-    SELECT * FROM {{ ref('stg_customers') }}
+    SELECT *
+    FROM {{ ref('stg_jaffle_shop__customers') }}
 
 ),
 
 orders as (
 
-    SELECT * FROM {{ ref('stg_orders') }}
+    SELECT *
+    FROM {{ ref('stg_jaffle_shop__orders') }}
 
 ),
 
 customer_orders as (
 
-    SELECT
-        customer_id,
+    SELECT customer_id,
 
         min(order_date) as first_order_date,
         max(order_date) as most_recent_order_date,
