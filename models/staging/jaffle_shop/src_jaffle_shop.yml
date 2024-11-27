@@ -12,6 +12,17 @@ sources:
     tables:
       - name: customers
         description: One record per customer.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
         freshness: null # Add to all tables that haven't got the _etl_loaded_at column
+
       - name: orders
         description: One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
