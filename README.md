@@ -7,6 +7,7 @@ This project serves as a hands-on learning environment to master dbt's core conc
 - **Connecting dbt Cloud to a data warehouse and Git repository**
 - **Exploring key concepts like modeling, sources, testing, documentation, and deployment**
 - **Building models and running tests in dbt Cloud**
+
 The course duration is approximately 5 hours.
 
 ## 🚀 Key Features
