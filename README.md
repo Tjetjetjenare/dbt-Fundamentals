@@ -1,4 +1,4 @@
-#dbt Fundamentals
+# dbt Fundamentals
 Welcome to the dbt Fundamentals project repository! This project demonstrates foundational concepts and best practices for building robust data transformation workflows using dbt (Data Build Tool).
 
 📚 Project Overview
